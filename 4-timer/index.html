@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            text-transform: capitalize;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            background: rgb(174,251,63);
+            background: radial-gradient(circle, rgba(174,251,63,1) 0%, rgba(161,70,252,1) 100%);
+        }
+        .timer {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 15px;
+        }
+        .timer div {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>До Нового года осталось:</h1>
+    <div class="timer">
+        <div id="months">Месяцев: 0</div>
+        <div id="days">Дней: 0</div>
+        <div id="hours">Часов: 0</div>
+        <div id="minutes">Минут: 0</div>
+        <div id="seconds">Секунд: 0</div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
