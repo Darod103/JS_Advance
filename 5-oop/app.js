@@ -25,7 +25,6 @@ const Elf = function (name,spell) {
 };
 
 Elf.prototype = Object.create(Character.prototype);
-
 Elf.prototype.cast = function() {
     console.log(`${this.name} создает заклинание '${this.spell}'`)
 }
@@ -33,9 +32,8 @@ Elf.prototype.cast = function() {
 
 const newOrk= new Ork('Тралл','топор')
 const newElf = new Elf('Эльсиртур','Fire ball')
-newOrk.speak()
-newOrk.hit()
-
+newOrk.speak();
+newOrk.hit();
 newElf.speak()
 newElf.cast()
 

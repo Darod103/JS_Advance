@@ -32,5 +32,6 @@ class Car {
 }
 
 const bmw = new Car('BMW', 'M5', 100)
-bmw.changeMileage(500)
+bmw.changeMileage(110)
+bmw.changeMileage(50)
 bmw.info()
